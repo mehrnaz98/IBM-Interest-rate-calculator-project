@@ -11,6 +11,11 @@ const calculate = () => {
   <div>Total Interest: <span>${simpleInterest.toFixed(2)}</span></div>
   <div>Total Amount: <span>${amount.toFixed(2)}</span></div>`;
 };
+
 const calculateSimpleInterest = (principal, rate, time) => {
   return (principal * rate * time) / 100;
+};
+
+const calculateTotalPayableAmount = (principal, interestAmount) => {
+  return principal - interestAmount;
 };
