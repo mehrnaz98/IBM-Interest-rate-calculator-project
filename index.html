@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      Interest Rate Calculator
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="principal">Principal Amount</label>
+          <input type="number" id="principal" value="1000" />
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="rate">Rate (%)</label>
+          <input type="number" id="rate" value="5" />
+        </div>
+      </div>
+      <div class="input-wrapper">
+        <div class="wrapper">
+          <label for="time">Time (Years)</label>
+          <input type="number" id="time" value="1" />
+        </div>
+      </div>
+      <button id="calculate-btn" onclick="calculate()">Calculate</button>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
